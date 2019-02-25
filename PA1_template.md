@@ -70,6 +70,7 @@ databyinterval[which(databyinterval$tsteps== max(databyinterval$tsteps)),]
 ## 1      835   206.
 ```
 ## Imputing missing values
+## Impute with mean of 5-min interval
 
 ```r
 missingVals <- sum(is.na(data))

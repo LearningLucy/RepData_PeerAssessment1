@@ -29,6 +29,7 @@ ggplot(databyinterval, aes(x=interval, y=tsteps))+ geom_line()
 databyinterval[which(databyinterval$tsteps== max(databyinterval$tsteps)),]
 ```
 ## Imputing missing values
+## Impute with mean of 5-min interval
 ```{r}
 missingVals <- sum(is.na(data))
 missingVals

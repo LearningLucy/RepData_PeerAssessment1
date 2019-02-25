@@ -226,6 +226,9 @@ ggplot(databyinterval, aes(x=interval, y=tsteps))+ geom_line()</code></pre>
 </div>
 <div id="imputing-missing-values" class="section level2">
 <h2>Imputing missing values</h2>
+</div>
+<div id="impute-with-mean-of-5-min-interval" class="section level2">
+<h2>Impute with mean of 5-min interval</h2>
 <pre class="r"><code>missingVals &lt;- sum(is.na(data))</code></pre>
 <pre><code>## Warning in is.na(data): is.na() applied to non-(list or vector) of type
 ## 'closure'</code></pre>
